@@ -6,28 +6,28 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>login Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
-       <h2>login Here</h2>
-<form action="loginServlet" method="POST">
-    <table border="0">
-        <tbody>
-            <tr>
-                <td>User Name</td>
-                <td><input type="password" nemaa="uname" value=" "></td>
-            </tr>
-<tr>
-    <td>Password</td>
-    <td><input type="text" name="pwd" value=" "></td>
-</tr>
-
-            
-        </tbody>
-        </table>
-</form>
+        <form action="LoginServlet" method="POST">
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td>user name</td>
+                        <td><input type="text" name="uname" value=""></td>
+                    </tr>
+                      <tr>
+                        <td>password</td>
+                        <td><input type="text" name="pwd" value=""></td>
+                    </tr>
+                      <tr>
+                          <td><input type="submit" name="login" value="Login"></td>
+                        <td><input type="submit" name="cancel" value="Cancel"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
     </body>
 </html>

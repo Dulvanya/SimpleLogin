@@ -74,7 +74,14 @@ public class loginServlet extends HttpServlet {
             throws ServletException, IOException {
        // processRequest(request, response);
                   String name=request.getParameter("uname");
-                  String uname=request.getParametre("pwd");
+                  String pwd=request.getParametre("pwd");
+
+                if(name.equals("Dulvanya") && pwd.equals("123")){
+                    response.sendRedirect("Welcome.jsp");
+                }
+                else{
+                    response.sendDirect('Error.jsp");
+                }
     }
 
     /**

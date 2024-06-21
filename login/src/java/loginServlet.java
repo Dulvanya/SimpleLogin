@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author DELL Latitude 7400
  */
-@WebServlet(urlPatterns = {"/loginServlet"})
-public class loginServlet extends HttpServlet {
+@WebServlet(urlPatterns = {"/LoginServlet"})
+public class LoginServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,10 +36,10 @@ public class loginServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet loginServlet</title>");            
+            out.println("<title>Servlet LoginServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet loginServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet LoginServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -57,8 +57,7 @@ public class loginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       processRequest(request, response);
-              
+        processRequest(request, response);
     }
 
     /**
@@ -72,16 +71,18 @@ public class loginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       // processRequest(request, response);
-                  String name=request.getParameter("uname");
-                  String pwd=request.getParametre("pwd");
-
-                if(name.equals("Dulvanya") && pwd.equals("123")){
-                    response.sendRedirect("Welcome.jsp");
-                }
-                else{
-                    response.sendDirect('Error.jsp");
-                }
+        //processRequest(request, response);
+        
+        String name=request.getParameter("uname");
+         String psw=request.getParameter("pwd");
+         
+         if(name.equals("dulvanya")&&psw.equals("123")){
+             response.sendRedirect("welcome.jsp");
+         }
+         else{
+             response.sendRedirect("error.jsp");
+         }
+        
     }
 
     /**

@@ -14,7 +14,7 @@
 </style>
     </head>
     <body>
-        <h1>Error Login</h1>
+        <h1>Login Error</h1>
         <h2>Check your login user name and password<h2>
     </body>
 </html>

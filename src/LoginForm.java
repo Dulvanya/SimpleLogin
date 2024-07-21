@@ -4,6 +4,17 @@ import javax.swing.*;
 
 public class LoginForm extends JFrame{
     public void initialize(){
+        /*Form Panel */
+
+
+
+
+
+
+
+
+
+        
         setTitle("Login Form");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setSize(400, 500);

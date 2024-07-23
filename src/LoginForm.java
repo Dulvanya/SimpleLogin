@@ -6,7 +6,7 @@ public class LoginForm extends JFrame{
     public void initialize(){
         /*Form Panel */
 
-
+JLabel lbLoginForm = new JLabel("Login Form", SwingConstants,CENTER);
 
 
 

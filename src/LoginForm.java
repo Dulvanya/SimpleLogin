@@ -3,10 +3,11 @@ import java.awt.*;
 import javax.swing.*;
 
 public class LoginForm extends JFrame{
+    final private font mainFont = new Font ("Segoe print", Font.BOLD, 18);
     public void initialize(){
         /*Form Panel */
 
-        
+
 JLabel lbLoginForm = new JLabel("Login Form", SwingConstants,CENTER);
 
 

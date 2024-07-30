@@ -23,8 +23,8 @@ tfEmail.setFont(mainFont);
 JLabel lbPassword = new JLabel("Password");
 lbPassword.setFont(mainFont);
 
-
-
+pfPassword = new JPasswordField();
+pfPassword.setFont(mainFont);
 
 
 

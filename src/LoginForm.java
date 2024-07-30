@@ -11,6 +11,7 @@ public class LoginForm extends JFrame{
 
 JLabel lbLoginForm = new JLabel("Login Form", SwingConstants.CENTER);
 lbLoginForm.setFont(mainFont);
+JTextField tfEmail;
 
 JLabel lbEmail = new JLabel("Email");
 lbEmail.setFont(mainFont);

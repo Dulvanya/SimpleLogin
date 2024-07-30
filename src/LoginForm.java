@@ -19,6 +19,8 @@ lbEmail.setFont(mainFont);
 tfEmail = new JTextField();
 tfEmail.setFont(mainFont);
 
+JLabel lbPassword = new JLabel("Password");
+lbPassword.setFont(mainFont);
 
 
 

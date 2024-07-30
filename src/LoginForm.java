@@ -31,7 +31,7 @@ formPanel.setLayout(new GridLayout(0, 1, 10, 10));
 formPanel.add(lbLoginForm);
 formPanel.add(lbEmail);
 formPanel.add(lbPassword);
-        
+formPanel.add(pfPassword);
         setTitle("Login Form");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setSize(400, 500);

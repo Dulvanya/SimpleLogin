@@ -30,6 +30,7 @@ JPanel formPanel = new JPanel();
 formPanel.setLayout(new GridLayout(0, 1, 10, 10));
 formPanel.add(lbLoginForm);
 formPanel.add(lbEmail);
+formPanel.add(tfEmailEmail);
 formPanel.add(lbPassword);
 formPanel.add(pfPassword);
         setTitle("Login Form");

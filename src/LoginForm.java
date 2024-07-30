@@ -16,6 +16,8 @@ JTextField tfEmail;
 JLabel lbEmail = new JLabel("Email");
 lbEmail.setFont(mainFont);
 
+tfEmail = new JTextField();
+tfEmail.setFont(mainFont);
 
 
 

@@ -29,8 +29,7 @@ pfPassword.setFont(mainFont);
 JPanel formPanel = new JPanel();
 formPanel.setLayout(new GridLayout(0, 1, 10, 10));
 formPanel.add(lbLoginForm);
-
-
+formPanel.add(lbEmail);
         
         setTitle("Login Form");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);

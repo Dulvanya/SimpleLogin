@@ -9,7 +9,7 @@ public class LoginForm extends JFrame{
         /*Form Panel */
 
 
-JLabel lbLoginForm = new JLabel("Login Form", SwingConstants,CENTER);
+JLabel lbLoginForm = new JLabel("Login Form", SwingConstants.CENTER);
 lbLoginForm.setFont(mainFont);
 
 JLabel lbEmail = new JLabel("Email");

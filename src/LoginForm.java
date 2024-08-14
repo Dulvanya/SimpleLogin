@@ -45,6 +45,8 @@ btnLogin.addActionListener(new ActionListener() {
         // TODO Auto-generated method stub
         String email = tfEmail.getText();
         String password = String.valueOf(pfPassword.getPassword());
+
+        User user = getAuthenticatedUser(email, password);
         }
     
 });

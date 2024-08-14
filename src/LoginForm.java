@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
@@ -36,6 +37,10 @@ public class LoginForm extends JFrame {
         /******************************* Buttons Panel ******************************/
         JButton btnLogin = new JButton("Login");
         btnLogin.setFont(mainFont);
+btnLogin.addActionListener(new ActionListener() {
+    
+})
+
 
         /******************************* Initiate the frame **************************/
         add(formPanel, BorderLayout.NORTH);

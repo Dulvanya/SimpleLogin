@@ -46,7 +46,7 @@ btnLogin.addActionListener(new ActionListener() {
         throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
     }
     
-})
+});
 
 
         /******************************* Initiate the frame **************************/

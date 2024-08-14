@@ -33,8 +33,10 @@ public class LoginForm extends JFrame {
         formPanel.add(lbPassword);
         formPanel.add(pfPassword);
 
-/*******************************Initiate the frame *******************************/
-add(formPanel, BorderLayout.NORTH);
+        /*******************************
+         * Initiate the frame
+         *******************************/
+        add(formPanel, BorderLayout.NORTH);
 
         setTitle("Login Form");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
@@ -43,5 +45,5 @@ add(formPanel, BorderLayout.NORTH);
         // setResizable(false);
         setLocationRelativeTo(null);
         setVisible(true);
-    } 
+    }
 }

@@ -43,8 +43,9 @@ btnLogin.addActionListener(new ActionListener() {
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
-    }
+        String email = tfEmail.getText();
+        String password = String.valueOf(pfPassword.getPassword());
+        }
     
 });
 

@@ -48,7 +48,17 @@ btnLogin.addActionListener(new ActionListener() {
 
         User user = getAuthenticatedUser(email, password);
 
-        
+        if(user != null){
+            MainFrame mainFrame = new MainFrame();
+            mainFrame.initialize(user);
+            dispose();
+        }
+        else{
+            JOptionPane.showMessageDialog(LoginForm.this, 
+            "Email or Password Invalid",
+            "Try again",
+            JOptionPane.ERROR_MESSAGE);
+        }
 
 
 

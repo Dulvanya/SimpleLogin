@@ -33,6 +33,9 @@ public class LoginForm extends JFrame {
         formPanel.add(lbPassword);
         formPanel.add(pfPassword);
 
+  /*******************************Buttons Panel *******************************/
+
+
         /*******************************
          * Initiate the frame
          *******************************/

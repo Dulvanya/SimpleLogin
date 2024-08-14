@@ -32,6 +32,10 @@ public class LoginForm extends JFrame {
         formPanel.add(tfEmail);
         formPanel.add(lbPassword);
         formPanel.add(pfPassword);
+
+
+
+        
         setTitle("Login Form");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setSize(400, 500);

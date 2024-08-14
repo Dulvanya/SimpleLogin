@@ -33,7 +33,7 @@ public class LoginForm extends JFrame {
         formPanel.add(lbPassword);
         formPanel.add(pfPassword);
 
-
+/*******************************Initiate the frame *******************************/
 add(formPanel, BorderLayout.NORTH);
 
         setTitle("Login Form");

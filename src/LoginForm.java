@@ -34,8 +34,8 @@ public class LoginForm extends JFrame {
         formPanel.add(pfPassword);
 
 
+add(formPanel, BorderLayout.NORTH);
 
-        
         setTitle("Login Form");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setSize(400, 500);

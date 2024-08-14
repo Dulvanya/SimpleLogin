@@ -35,6 +35,10 @@ public class LoginForm extends JFrame {
 
         /******************************* Buttons Panel *******************************/
 
+
+
+
+        
         /******************************* Initiate the frame **************************/
         add(formPanel, BorderLayout.NORTH);
 

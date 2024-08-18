@@ -90,6 +90,10 @@ try{
     
     String sql = "SELECT * FROM users WHERE email=? AND password=? ";
     PreparedStatement preparedStatement = conn.prepareStatement(sql);
+    preparedStatement.setString(1, email);
+    preparedStatement.setString(2, password);
+
+    
 }
 
 

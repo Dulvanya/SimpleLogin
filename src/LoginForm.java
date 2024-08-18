@@ -95,6 +95,11 @@ try{
     preparedStatement.setString(2, password);
 
     ResultSet resultSet = preparedStatement.executeQuery();
+
+if(resultSet.next()){
+    
+}
+
 }
 
 

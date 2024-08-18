@@ -86,6 +86,7 @@ final String PASSWORD = " ";
 try{
     Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
     
+    String sql = "SELECT * FROM users WHERE email=? AND password=? ";
 }
 
 

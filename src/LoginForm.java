@@ -82,6 +82,12 @@ btnLogin.addActionListener(new ActionListener() {
 
     private User getAuthenticatedUser(String email, String password) {
 User user = null ;
+
+
+final String DB_URL = "   " ;
+final String USERNAME = "root";
+final String PASSWORD = " ";
+
     }
 
 

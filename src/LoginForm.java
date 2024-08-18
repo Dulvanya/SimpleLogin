@@ -38,35 +38,30 @@ public class LoginForm extends JFrame {
         /******************************* Buttons Panel ******************************/
         JButton btnLogin = new JButton("Login");
         btnLogin.setFont(mainFont);
-btnLogin.addActionListener(new ActionListener() {
+        btnLogin.addActionListener(new ActionListener() {
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
-        String email = tfEmail.getText();
-        String password = String.valueOf(pfPassword.getPassword());
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                String email = tfEmail.getText();
+                String password = String.valueOf(pfPassword.getPassword());
 
-        User user = getAuthenticatedUser(email, password);
+                User user = getAuthenticatedUser(email, password);
 
-        if(user != null){
-            MainFrame mainFrame = new MainFrame();
-            mainFrame.initialize(user);
-            dispose();
-        }
-        else{
-            JOptionPane.showMessageDialog(LoginForm.this, 
-            "Email or Password Invalid",
-            "Try again",
-            JOptionPane.ERROR_MESSAGE);
-        }
+                if (user != null) {
+                    MainFrame mainFrame = new MainFrame();
+                    mainFrame.initialize(user);
+                    dispose();
+                } else {
+                    JOptionPane.showMessageDialog(LoginForm.this,
+                            "Email or Password Invalid",
+                            "Try again",
+                            JOptionPane.ERROR_MESSAGE);
+                }
 
+            }
 
-
-
-        }
-    
-});
-
+        });
 
         /******************************* Initiate the frame **************************/
         add(formPanel, BorderLayout.NORTH);
@@ -80,8 +75,8 @@ btnLogin.addActionListener(new ActionListener() {
         setVisible(true);
     }
 
-    private User getAuthenticatedUser(String email, String password) {
-User user = null ;
+private User getAuthenticatedUser(String email, String password) {
+   User user = null ;
 
 
 final String DB_URL = "   " ;
@@ -89,11 +84,11 @@ final String USERNAME = "root";
 final String PASSWORD = " ";
 
 try{
+    Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
     
 }
 
 
     }
-
 
 }

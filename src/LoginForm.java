@@ -80,8 +80,8 @@ btnLogin.addActionListener(new ActionListener() {
         setVisible(true);
     }
 
-    private User getAuthenticatedUser(String email, String password){
-        
+    private User getAuthenticatedUser(String email, String password) {
+User user = null ;
     }
 
 

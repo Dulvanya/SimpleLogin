@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import javax.swing.*;
 
@@ -93,7 +94,7 @@ try{
     preparedStatement.setString(1, email);
     preparedStatement.setString(2, password);
 
-    
+    ResultSet resultSet = preparedStatement.executeQuery();
 }
 
 

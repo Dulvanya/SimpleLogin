@@ -4,6 +4,7 @@ import javax.swing.*;
 
 public class LoginForm extends JFrame {
 final private Font mainFont = new Font("Segeo print", Font.BOLD, 18);
+JTextField tfEmail;
 
     public void initialize() {
         /************ From pael ************/
@@ -26,3 +27,7 @@ lbEmail.setFont(mainFont);
     }
 
 }
+
+
+
+4:58

@@ -3,10 +3,10 @@ import java.awt.*;
 import javax.swing.*;
 
 public class LoginForm extends JFrame {
-final private Font mainFont = new Font("Segeo print", Font.BOLD, 18);
-JTextField tfEmail;
-JPasswordField pfPassword;
-JFrame formPanel;
+    final private Font mainFont = new Font("Segeo print", Font.BOLD, 18);
+    JTextField tfEmail;
+    JPasswordField pfPassword;
+    JFrame formPanel;
 
     public void initialize() {
         /************ From pael ************/
@@ -55,6 +55,4 @@ add(formPanel, BorderLayout.NORTH);
 
 }
 
-
-
-4:58
+6.55

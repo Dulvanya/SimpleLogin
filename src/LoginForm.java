@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
@@ -37,8 +39,18 @@ formPanel.add(pfPassword);
 
 /*Buttons Panel */
 
+JButton btnLogin = new JButton("Login");
+btnLogin.setFont(mainFont);
+btnLogin.addActionListener(new ActionListener() {
 
-
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        // TODO Auto-generated method stub
+        String email = tfEmail.getText();
+        String password = String.valueOf(pfPassword.getPassword());
+         }
+    
+});
 
 /*Initialise the frame */
 

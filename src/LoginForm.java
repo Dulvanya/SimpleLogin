@@ -52,6 +52,18 @@ btnLogin.addActionListener(new ActionListener() {
 
          User user = getAuthenticatedUser(email,password);
     
+         if(user != null){
+            MainFrame MainFrame = new MainFrame();
+            MainFrame.initialize(user);
+            dispose();
+         }
+else{
+    JOptionPane.showMessageDialog(LoginForm.this,
+    "Email or password invalid",
+    "Try again",
+    JOptionPane.ERROR_MESSAGE);
+}
+
 });
 
 /*Initialise the frame */
@@ -67,6 +79,12 @@ add(formPanel, BorderLayout.NORTH);
         setVisible(true);
     }
 
+
+
+
+
+
+    
 }
 
-6.55
+

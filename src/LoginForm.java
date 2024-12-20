@@ -94,9 +94,9 @@ public class LoginForm extends JFrame {
     private User getAuthenticatedUser(String email, String password) {
         User user = null;
 
-        final String DB_URL = "jdbc:mysql://localhost:3306/your_database"; // Update with your DB URL
+        final String DB_URL = "jdbc:mysql://localhost:3306/your_database"; 
         final String USERNAME = "root";
-        final String PASSWORD = "your_password"; // Update with your DB password
+        final String PASSWORD = "your_password"; 
 
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);

@@ -11,10 +11,9 @@ public class LoginForm extends JFrame {
     final private Font mainFont = new Font("Segoe Print", Font.BOLD, 18);
     JTextField tfEmail;
     JPasswordField pfPassword;
-    JFrame formPanel;
 
     public void initialize() {
-        /************ From panel ************/
+        /************ Form panel ************/
         JLabel lbLoginForm = new JLabel("Login Form", SwingConstants.CENTER);
         lbLoginForm.setFont(mainFont);
 
@@ -45,7 +44,6 @@ public class LoginForm extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
                 String email = tfEmail.getText();
                 String password = String.valueOf(pfPassword.getPassword());
 
@@ -98,28 +96,22 @@ public class LoginForm extends JFrame {
         final String USERNAME = "root";
         final String PASSWORD = "your_password"; 
 
-        try {
-            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+        try (Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+             PreparedStatement preparedStatement = conn.prepareStatement("SELECT * FROM users WHERE email=? AND password=?")) {
 
-            String sql = "SELECT * FROM users WHERE email=? AND password=?";
-            PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, email);
             preparedStatement.setString(2, password);
 
-            ResultSet resultSet = preparedStatement.executeQuery();
-
-            if (resultSet.next()) {
-                user = new User();
-                user.name = resultSet.getString("name");
-                user.email = resultSet.getString("email");
-                user.phone = resultSet.getString("phone");
-                user.address = resultSet.getString("address");
-                user.password = resultSet.getString("password");
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    user = new User();
+                    user.name = resultSet.getString("name");
+                    user.email = resultSet.getString("email");
+                    user.phone = resultSet.getString("phone");
+                    user.address = resultSet.getString("address");
+                    user.password = resultSet.getString("password");
+                }
             }
-
-            preparedStatement.close();
-            conn.close();
-
         } catch (Exception e) {
             System.out.println("Database connection failed");
             e.printStackTrace();
@@ -132,4 +124,12 @@ public class LoginForm extends JFrame {
         LoginForm loginForm = new LoginForm();
         loginForm.initialize();
     }
+}
+
+class User {
+    String name;
+    String email;
+    String phone;
+    String address;
+    String password;
 }
